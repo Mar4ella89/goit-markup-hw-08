@@ -28,33 +28,107 @@
           >
           <ul class="menu list">
             <li class="menu__item">
-              <a href="./index.html" class="menu__link menu__link_accent link ">Студия</a>
+              <a
+                href="./index.html"
+                class="menu__link menu__link_accent link"
+                >Студия</a
+              >
             </li>
             <li class="menu__item">
-              <a href="./portfolio.html" class="menu__link menu__link_accent link menu__link_current">Портфолио</a>
+              <a
+                href="./portfolio.html"
+                class="menu__link menu__link_accent menu__link_current link"
+                >Портфолио</a
+              >
             </li>
             <li class="menu__item">
               <a href="" class="menu__link menu__link_accent link">Контакты</a>
             </li>
           </ul>
         </nav>
-        <ul class="menu header-nav__menu list">
-          <li class="menu__item">
-            <a href="mailto:info@devstudio.com" class="menu__link menu__link_theme_grey link text">
-              <svg class="menu__icon" width="16" height="12">
+        <ul class="contacts-nav list">
+          <li class="contacts-nav__item">
+            <a
+              href="mailto:info@devstudio.com"
+              class="contacts-nav__link contacts-nav__link_theme_grey link text"
+            >
+              <svg class="contacts-nav__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use></svg
               >info@devstudio.com
             </a>
           </li>
-          <li class="menu__item">
-            <a href="tel:+380961111111" class="menu__link menu__link_theme_grey link text">
-              <svg class="menu__icon" width="10" height="16">
+          <li class="contacts-nav__item">
+            <a
+              href="tel:+380961111111"
+              class="contacts-nav__link contacts-nav__link_theme_grey link text"
+            >
+              <svg class="contacts-nav__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11</a
             >
           </li>
         </ul>
+
+        <button type="button" class="mobile-menu-open" data-menu-open>
+          <svg class="mobile-menu-open__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-burger"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu__container">
+          <nav class="mobile-menu__navigation">
+            <ul class="mobile-menu__nav-list list">
+              <li class="mobile-menu__nav-item">
+                <a
+                  href="./index.html"
+                  class="mobile-menu__nav-link link current"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="" class="mobile-menu__nav-link link">Портфолио</a>
+              </li>
+              <li class="mobile-menu__nav-item">
+                <a href="" class="mobile-menu__nav-link link">Контакты</a>
+              </li>
+            </ul>
+          </nav>
+
+          <p class="mobile-menu__tel-text">
+            <a href="tel:+380961111111" class="mobile-menu__tel-link link"
+              >+38 096 111 11 11</a
+            >
+          </p>
+          <p class="mobile-menu__mail-text">
+            <a
+              href="mailto:info@devstudio.com"
+              class="mobile-menu__mail-link link"
+              >info@devstudio.com</a
+            >
+          </p>
+
+          <ul class="mobile-menu__social-list list">
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link link">Instagram</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link link">Twitter</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link link">Facebook</a>
+            </li>
+            <li class="mobile-menu__social-item">
+              <a href="" class="mobile-menu__social-link link">LinkedIn</a>
+            </li>
+          </ul>
+          <button type="button" class="mobile-menu__close-btn" data-menu-close>
+            <svg class="mobile-menu__close-icon" width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+        </div>
       </div>
     </header>
     <main>
@@ -89,12 +163,60 @@
             <li class="project-list__item">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrapper">
-                  <img
-                    src="./images/web.jpg"
-                    alt="Пример веб-сайта стремя фото"
-                    width="370"
-                    class="project-list__img"
-                  />
+                  <picture>
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-1.webp    1x,
+                    ./images/project-desk/project-desk-1@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-1.jpg    1x,
+                    ./images/project-desk/project-desk-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-1.webp    1x,
+                    ./images/project-tab/project-tab-1@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-1.jpg    1x,
+                    ./images/project-tab/project-tab-1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-1.webp    1x,
+                    ./images/project-mob/project-mob-1@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-1.jpg    1x,
+                    ./images/project-mob/project-mob-1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/project-mob/project-mob-1.jpg"
+                  alt="Пример веб-сайта стремя фото"
+                  width="370"
+                  class="project-list__img"
+                />
+              </picture>
+                  
                   <p class="project-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -110,12 +232,60 @@
             <li class="project-list__item">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrapper">
-                  <img
-                    src="./images/design.jpg"
-                    alt="Постер с двумя баскетболистами"
-                    width="370"
-                    class="project-list__img"
-                  />
+                  <picture>
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-2.webp    1x,
+                    ./images/project-desk/project-desk-2@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-2.jpg    1x,
+                    ./images/project-desk/project-desk-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-2.webp    1x,
+                    ./images/project-tab/project-tab-2@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-2.jpg    1x,
+                    ./images/project-tab/project-tab-2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-2.webp    1x,
+                    ./images/project-mob/project-mob-2@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-2.jpg    1x,
+                    ./images/project-mob/project-mob-2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/project-mob/project-mob-2.jpg"
+                  alt="Постер с двумя баскетболистами"
+                  width="370"
+                  class="project-list__img"
+                />
+              </picture>
+                  
                   <p class="project-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -133,12 +303,60 @@
             <li class="project-list__item">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrapper">
-                  <img
-                    src="./images/app.jpg"
-                    alt="Логотип ресторана"
-                    width="370"
-                    class="project-list__img"
-                  />
+                  <picture>
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-3.webp    1x,
+                    ./images/project-desk/project-desk-3@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-3.jpg    1x,
+                    ./images/project-desk/project-desk-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-3.webp    1x,
+                    ./images/project-tab/project-tab-3@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-3.jpg    1x,
+                    ./images/project-tab/project-tab-3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-3.webp    1x,
+                    ./images/project-mob/project-mob-3@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-3.jpg    1x,
+                    ./images/project-mob/project-mob-3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/project-mob/project-mob-3.jpg"
+                  alt="Логотип ресторана"
+                  width="370"
+                  class="project-list__img"
+                />
+              </picture>
+                  
                   <p class="project-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -156,12 +374,60 @@
             <li class="project-list__item">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrapper">
-                  <img
-                    src="./images/marketing.jpg"
-                    alt="Наушники на белом фоне"
-                    width="370"
-                    class="project-list__img"
-                  />
+                  <picture>
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-4.webp    1x,
+                    ./images/project-desk/project-desk-4@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-4.jpg    1x,
+                    ./images/project-desk/project-desk-4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-4.webp    1x,
+                    ./images/project-tab/project-tab-4@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-4.jpg    1x,
+                    ./images/project-tab/project-tab-4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-4.webp    1x,
+                    ./images/project-mob/project-mob-4@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-4.jpg    1x,
+                    ./images/project-mob/project-mob-4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/project-mob/project-mob-4.jpg"
+                  alt="Наушники на белом фоне"
+                  width="370"
+                  class="project-list__img"
+                />
+              </picture>
+                  
                   <p class="project-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -179,12 +445,60 @@
             <li class="project-list__item">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrapper">
-                  <img
-                    src="./images/app-box.jpg"
-                    alt="Коричневая и белая коробки лежат друг возле друга"
-                    width="370"
-                    class="project-list__img"
-                  />
+                  <picture>
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-5.webp    1x,
+                    ./images/project-desk/project-desk-5@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-5.jpg    1x,
+                    ./images/project-desk/project-desk-5@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-5.webp    1x,
+                    ./images/project-tab/project-tab-5@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-5.jpg    1x,
+                    ./images/project-tab/project-tab-5@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-5.webp    1x,
+                    ./images/project-mob/project-mob-5@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-5.jpg    1x,
+                    ./images/project-mob/project-mob-5@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/project-mob/project-mob-5.jpg"
+                  alt="Коричневая и белая коробки лежат друг возле друга"
+                  width="370"
+                  class="project-list__img"
+                />
+              </picture>
+                 
                   <p class="project-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -202,12 +516,60 @@
             <li class="project-list__item">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrapper">
-                  <img
-                    src="./images/web-site.jpg"
-                    alt="Монитор с открытой веб-страницей"
-                    width="370"
-                    class="project-list__img"
-                  />
+                  <picture>
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-6.webp    1x,
+                    ./images/project-desk/project-desk-6@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-6.jpg    1x,
+                    ./images/project-desk/project-desk-6@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-6.webp    1x,
+                    ./images/project-tab/project-tab-6@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-6.jpg    1x,
+                    ./images/project-tab/project-tab-6@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-6.webp    1x,
+                    ./images/project-mob/project-mob-6@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-6.jpg    1x,
+                    ./images/project-mob/project-mob-6@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/project-mob/project-mob-6.jpg"
+                  alt="Монитор с открытой веб-страницей"
+                  width="370"
+                  class="project-list__img"
+                />
+              </picture>
+                  
                   <p class="project-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -225,12 +587,60 @@
             <li class="project-list__item">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrapper">
-                  <img
-                    src="./images/design-lim-ed.jpg"
-                    alt="Открытая книга с изображением"
-                    width="370"
-                    class="project-list__img"
-                  />
+                  <picture>
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-7.webp    1x,
+                    ./images/project-desk/project-desk-7@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-7.jpg    1x,
+                    ./images/project-desk/project-desk-7@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-7.webp    1x,
+                    ./images/project-tab/project-tab-7@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-7.jpg    1x,
+                    ./images/project-tab/project-tab-7@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-7.webp    1x,
+                    ./images/project-mob/project-mob-7@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-7.jpg    1x,
+                    ./images/project-mob/project-mob-7@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/project-mob/project-mob-7.jpg"
+                  alt="Открытая книга с изображением"
+                  width="370"
+                  class="project-list__img"
+                />
+              </picture>
+                  
                   <p class="project-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -248,12 +658,60 @@
             <li class="project-list__item">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrapper">
-                  <img
-                    src="./images/marketing-lab.jpg"
-                    alt="Бирка с изображением"
-                    width="370"
-                    class="project-list__img"
-                  />
+                  <picture>
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-8.webp    1x,
+                    ./images/project-desk/project-desk-8@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-8.jpg    1x,
+                    ./images/project-desk/project-desk-8@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-8.webp    1x,
+                    ./images/project-tab/project-tab-8@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-8.jpg    1x,
+                    ./images/project-tab/project-tab-8@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-8.webp    1x,
+                    ./images/project-mob/project-mob-8@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-8.jpg    1x,
+                    ./images/project-mob/project-mob-8@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/project-mob/project-mob-8.jpg"
+                  alt="Бирка с изображением"
+                  width="370"
+                  class="project-list__img"
+                />
+              </picture>
+                  
                   <p class="project-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -269,12 +727,60 @@
             <li class="project-list__item">
               <a href="" class="project-list__link link">
                 <div class="project-list__wrapper">
-                  <img
-                    src="./images/app-business.jpg"
-                    alt="Ноутбук с открытой веб-страницей"
-                    width="370"
-                    class="project-list__img"
-                  />
+                  <picture>
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-9.webp    1x,
+                    ./images/project-desk/project-desk-9@2x.webp 2x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-desk/project-desk-9.jpg    1x,
+                    ./images/project-desk/project-desk-9@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-9.webp    1x,
+                    ./images/project-tab/project-tab-9@2x.webp 2x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-tab/project-tab-9.jpg    1x,
+                    ./images/project-tab/project-tab-9@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-9.webp    1x,
+                    ./images/project-mob/project-mob-9@2x.webp 2x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/project-mob/project-mob-9.jpg    1x,
+                    ./images/project-mob/project-mob-9@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./images/project-mob/project-mob-9.jpg"
+                  alt="Ноутбук с открытой веб-страницей"
+                  width="370"
+                  class="project-list__img"
+                />
+              </picture>
+                  
                   <p class="project-list__overlay">
                     Ресурс предлагает комплексные предложения с разным уровнем
                     функционала и сервисов. Все это позволит посетителю получить
@@ -294,68 +800,73 @@
     <!-- Подвал веб-сайта -->
     <footer class="footer">
       <div class="footer__container container">
-        <div class="footer__left-container">
-          <a href="./index.html" lang="en" class="logo logo_theme-dark footer__logo link"
-            ><span class="logo__part">Web</span>Studio</a
-          >
-          <address class="footer__address">
-            <ul class="footer__list list">
-              <li class="footer__item">
-                <a
-                  href="https://goo.gl/maps/6M82xYNFKFXgEUn27"
-                  class="footer__link link"
-                  >г. Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="footer__container-wrapper">
+          <div class="footer__contacts-container">
+            <a
+              href="./index.html"
+              lang="en"
+              class="logo logo_theme-dark footer__logo link"
+              ><span class="logo__part">Web</span>Studio</a
+            >
+            <address class="footer__address">
+              <ul class="footer__list list">
+                <li class="footer__item">
+                  <a
+                    href="https://goo.gl/maps/6M82xYNFKFXgEUn27"
+                    class="footer__link link"
+                    >г. Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="mailto:info@example.com"
+                    class="footer__link footer__link_color_grey link"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a
+                    href="tel:+380991111111"
+                    class="footer__link footer__link_color_grey link"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="social-container">
+            <h2 class="social-container__title">присоединяйтесь</h2>
+            <ul class="social-container__list list">
+              <li>
+                <a href="" class="social-container__link">
+                  <svg class="social-container__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a
-                  href="mailto:info@example.com"
-                  class="footer__link footer__link_color_grey link"
-                  >info@example.com</a
-                >
+              <li>
+                <a href="" class="social-container__link">
+                  <svg class="social-container__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a
-                  href="tel:+380991111111"
-                  class="footer__link footer__link_color_grey link"
-                  >+38 099 111 11 11</a
-                >
+              <li>
+                <a href="" class="social-container__link">
+                  <svg class="social-container__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a href="" class="social-container__link">
+                  <svg class="social-container__icon" width="20" height="20">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="social-container">
-          <h2 class="social-container__title">присоединяйтесь</h2>
-          <ul class="social-container__list list">
-            <li>
-              <a href="" class="social-container__link">
-                <svg class="social-container__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-container__link">
-                <svg class="social-container__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-container__link">
-                <svg class="social-container__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a href="" class="social-container__link">
-                <svg class="social-container__icon" width="20" height="20">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
         <div class="footer-form-wrapper">
           <b class="footer-form-wrapper__text">Подпишитесь на рассылку</b>
