@@ -88,7 +88,9 @@
                 >
               </li>
               <li class="mobile-menu__nav-item">
-                <a href="./portfolio.html" class="mobile-menu__nav-link link">Портфолио</a>
+                <a href="./portfolio.html" class="mobile-menu__nav-link link"
+                  >Портфолио</a
+                >
               </li>
               <li class="mobile-menu__nav-item">
                 <a href="" class="mobile-menu__nav-link link">Контакты</a>
@@ -209,34 +211,88 @@
           <ul class="services-card list gap">
             <li class="services-card__item">
               <div class="services-card__label-container">
-                <img
-                  class="services-card__img"
-                  src="./images/note.jpg"
-                  alt="Человек пишет код для веб-сайта"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/services/services-1.webp    1x,
+                      ./images/services/services-1@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/services/services-1.jpg    1x,
+                      ./images/services/services-1@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/services/services-1.jpg"
+                    alt="Человек пишет код для веб-сайта"
+                    width="370"
+                    class="services-card__img"
+                  />
+                </picture>
+
                 <p class="services-card__label">Десктопные приложения</p>
               </div>
             </li>
             <li class="services-card__item">
               <div class="services-card__label-container">
-                <img
-                  class="services-card__img"
-                  src="./images/phone.jpg"
-                  alt="Человек разробатывает мобильное приложение"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/services/services-2.webp    1x,
+                      ./images/services/services-2@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/services/services-2.jpg    1x,
+                      ./images/services/services-2@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/services/services-2.jpg"
+                    alt="Человек разробатывает мобильное приложение"
+                    width="370"
+                    class="services-card__img"
+                  />
+                </picture>
+
                 <p class="services-card__label">Мобильные приложения</p>
               </div>
             </li>
             <li class="services-card__item">
               <div class="services-card__label-container">
-                <img
-                  class="services-card__img"
-                  src="./images/pad.jpg"
-                  alt="Человек разробатывает мобильное приложение для планшета"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/services/services-3.webp    1x,
+                      ./images/services/services-3@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/services/services-3.jpg    1x,
+                      ./images/services/services-3@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="./images/services/services-3.jpg"
+                    alt="Человек разробатывает мобильное приложение для планшета"
+                    width="370"
+                    class="services-card__img"
+                  />
+                </picture>
+
                 <p class="services-card__label">Дизайнерские решения</p>
               </div>
             </li>
