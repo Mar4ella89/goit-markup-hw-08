@@ -985,6 +985,7 @@ body {
   }
   .footer__contacts-container {
     margin-right: 85px;
+    text-align: left;
   }
   .footer__container-wrapper {
     align-items: baseline;
