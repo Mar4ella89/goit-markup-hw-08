@@ -266,12 +266,18 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 528px;
-  height: 581px;
+  width: 450px;
+  height: 609px;
   background-color: var(--primary-background-color);
   padding: 40px;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    height: 581px;
+  }
+}
 .modal-close-btn {
   position: absolute;
   top: 8px;
@@ -300,7 +306,7 @@ body {
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
@@ -342,7 +348,11 @@ body {
 .modal-form-check-desc {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 }
 .modal-form-check-desc::before {
   content: "";
@@ -418,6 +428,15 @@ body {
   align-self: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .modal-description {
+    line-height: 1.15;
+  }
+  .modal-form-check-desc {
+    line-height: 1.71;
+    font-size: 14px;
+  }
+}
 .header-nav__container {
   display: flex;
   align-items: center;

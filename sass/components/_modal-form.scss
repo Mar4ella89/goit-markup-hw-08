@@ -2,7 +2,7 @@
   display: block;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
@@ -47,7 +47,12 @@
 .modal-form-check-desc {
   display: flex;
   justify-content: center;
+  align-items: baseline;
   margin-bottom: 30px;
+
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
 
   &::before {
     content: "";
@@ -130,4 +135,15 @@
 .user-policy__btn {
   padding: 10px 56px;
   align-self: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-description {
+    line-height: 1.15;
+  }
+
+  .modal-form-check-desc {
+    line-height: 1.71;
+    font-size: 14px;
+  }
 }
