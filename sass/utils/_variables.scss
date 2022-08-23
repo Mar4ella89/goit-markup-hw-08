@@ -1,0 +1,22 @@
+:root {
+  --primary-color: #757575;
+  --secondary-color: #212121;
+  --tertiary-color: #ffffff;
+  --accent-color: #2196f3;
+
+  --primary-background-color: #ffffff;
+  --secondary-background-color: #2f303a;
+  --tertiary-background-color: #f5f4fa;
+  --hero-background-color: #c4c4c4;
+
+  --primary-font: "Roboto", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
+
+  --primary-font-size: 14px;
+  --secondary-font-size: 16px;
+
+  --transition-dur-and-func: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  --tablet: calc((100% - 30px) / 2);
+  --desktop: calc((100% - 90px) / 4);
+}

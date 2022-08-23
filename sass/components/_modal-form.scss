@@ -1,0 +1,133 @@
+.modal-description {
+  display: block;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+
+  margin-bottom: 12px;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-form-input-desc {
+  display: block;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.01em;
+  margin-bottom: 4px;
+}
+
+.modal-form-input {
+  display: block;
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+  margin-bottom: 10px;
+
+  transition: border-color var(--transition-dur-and-func);
+
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+}
+
+.modal-form-comment {
+  margin-bottom: 20px;
+}
+
+.modal-form-check-desc {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+
+  &::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 15px;
+    border: 1px solid;
+    border-radius: 4px;
+    /* background-image: url("../images/check-box-icon.svg");
+  background-size: contain;
+  background-repeat: no-repeat; */
+    cursor: pointer;
+    margin-right: 7px;
+
+    .modal-form-check:checked + & {
+      /* background-image: url("../images/icon-check.svg"); */
+      background-image: url("../images/check-mark-icon.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      border: none;
+      background-color: var(--accent-color);
+    }
+
+    .modal-form-check:focus + & {
+      outline: 1px solid var(--accent-color);
+    }
+  }
+}
+
+.modal-form-input-wrapper {
+  display: block;
+  position: relative;
+}
+
+.modal-form-input-icon {
+  display: block;
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translate(0, -50%);
+  fill: #212121;
+
+  transition: fill var(--transition-dur-and-func);
+
+  .modal-form-input:focus + & {
+    fill: var(--accent-color);
+  }
+}
+
+.modal-form-comment {
+  width: 100%;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color var(--transition-dur-and-func);
+
+  &:focus {
+    border-color: var(--accent-color);
+    outline: none;
+  }
+
+  &::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.user-policy-link {
+  color: var(--accent-color);
+  text-decoration: underline;
+}
+
+.user-policy__btn {
+  padding: 10px 56px;
+  align-self: center;
+}
