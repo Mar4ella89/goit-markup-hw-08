@@ -79,7 +79,12 @@
 }
 
 @media screen and (max-width: 767px) {
-  .footer__contacts-container,
+  .footer__contacts-container {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .footer__container-wrapper {
     margin-bottom: 60px;
   }
@@ -128,7 +133,6 @@
   .footer__container-wrapper {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 60px;
   }
 
   .footer-form__mail {
@@ -159,6 +163,10 @@
     align-items: baseline;
   }
 
+  .social-container__title {
+    text-align: left;
+  }
+
   .footer-form-wrapper {
     margin-left: auto;
     align-items: baseline;
@@ -179,8 +187,4 @@
   .footer-form-wrapper__text {
     text-align: left;
   }
-
-   
 }
-
-

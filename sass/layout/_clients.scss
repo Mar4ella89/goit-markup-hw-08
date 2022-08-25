@@ -10,7 +10,7 @@
   justify-content: center;
   align-items: center;
 
-  width: 170px;
+  width: 210px;
   height: 92px;
   background-color: var(--primary-background-color);
   border: 1px solid #afb1b8;
@@ -30,4 +30,16 @@
 .clients-card-set__icon {
   display: flex;
   fill: currentColor;
+}
+
+@media screen and (min-width: 768px) {
+  .clients-card-set__link {
+    width: 226px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients-card-set__link {
+    width: 170px;
+  }
 }
